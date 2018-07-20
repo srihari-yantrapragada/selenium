@@ -11,9 +11,12 @@ public class TC_002 {
 		
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
-		driver.get("http://www.facebook.com");
+		driver.get("http://192.168.6.112:8080/iportman_uat3/");
+		driver.findElement(By.name("j_username")).sendKeys("srihari");
+		driver.findElement(By.name("j_password")).sendKeys("srihari");
+		/*driver.get("http://www.facebook.com");
 		driver.findElement(By.id("email")).sendKeys("srihari");
-		driver.findElement(By.id("pass")).sendKeys("srihari");
+		driver.findElement(By.id("pass")).sendKeys("srihari");*/
 		driver.quit();
 
 	}
